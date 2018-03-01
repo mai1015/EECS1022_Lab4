@@ -57,4 +57,11 @@ public class Bank {
     public boolean deposit(Client to, double amount) {
         return to.deposit(amount);
     }
+
+    @Override
+    public String toString()
+    {
+        return String.format("%s\n%s\n%s\n",
+                clienta, clientb, clientc);
+    }
 }

@@ -40,4 +40,10 @@ public class Client {
         amount -= money;
         return true;
     }
+ 
+    @Override
+    public String toString()
+    {
+        return String.format("Client %s has balance $%.2f", name, amount);
+    }
 }
